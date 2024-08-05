@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Simple React Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción del Proyecto
 
-## Available Scripts
+El proyecto consiste en desarrollar una calculadora web utilizando HTML, CSS y JavaScript, implementada con React. La calculadora es un clon de la calculadora de iOS, replicando tanto su diseño como su funcionalidad básica.
 
-In the project directory, you can run:
+### Características Principales
 
-### `npm start`
+- Realiza operaciones aritméticas básicas: suma, resta, multiplicación y división.
+- Interfaz de usuario similar a la calculadora de iOS.
+- Implementada utilizando React para la gestión del estado y la renderización de componentes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Estructura del Proyecto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+El proyecto está organizado en los siguientes directorios y archivos:
 
-### `npm test`
+- **src**: Contiene el código fuente de la aplicación.
+  - **components**: Contiene los componentes de la calculadora.
+    - **button**: Componente para los botones de la calculadora.
+    - **buttonpanel**: Componente que agrupa todos los botones.
+    - **display**: Componente para la pantalla de la calculadora.
+  - **logic**: Contiene la lógica de las operaciones de la calculadora.
+    - **Addition**: Clase para la operación de suma.
+    - **Subtraction**: Clase para la operación de resta.
+    - **Multiplication**: Clase para la operación de multiplicación.
+    - **Division**: Clase para la operación de división.
+    - **Operation**: Clase abstracta para las operaciones.
+    - **Calculator**: Clase principal que maneja la lógica de la calculadora.
+  - **App.js**: Componente principal de la aplicación.
+  - **App.css**: Estilos para el componente principal de la aplicación.
+  - **index.js**: Punto de entrada de la aplicación.
+  - **index.css**: Estilos globales de la aplicación.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalación y Ejecución
 
-### `npm run build`
+Sigue estos pasos para clonar el repositorio, instalar las dependencias y ejecutar la aplicación en tu entorno local:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Clonar el Repositorio
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+git clone <URL_DEL_REPOSITORIO>
+cd simple-react-app
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Instalar Dependencias
 
-### `npm run eject`
+Asegúrate de tener `npm` instalado. Luego, ejecuta:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Ejecutar la Aplicación
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Para iniciar la aplicación en modo de desarrollo, ejecuta:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```sh
+npm start
+```
 
-## Learn More
+Esto abrirá la aplicación en tu navegador por defecto en `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Ejecutar Pruebas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para ejecutar las pruebas, usa el siguiente comando:
 
-### Code Splitting
+```sh
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Esto ejecutará las pruebas utilizando Jest y mostrará los resultados en la consola.
 
-### Analyzing the Bundle Size
+### Generar Informe de Cobertura de Pruebas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Para generar un informe de cobertura de pruebas, ejecuta:
 
-### Making a Progressive Web App
+```sh
+npm test -- --coverage
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Esto generará un informe detallado en la carpeta `coverage`.
 
-### Advanced Configuration
+## Contribuir
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
-### Deployment
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -am 'Añadir nueva funcionalidad'`).
+4. Sube tus cambios a tu fork (`git push origin feature/nueva-funcionalidad`).
+5. Abre un Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Licencia
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto está bajo la licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
