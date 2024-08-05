@@ -1,38 +1,32 @@
+/* src/App.css */
+
+:root {
+  --background-color: #000000;
+  --display-bg-color: #333333;
+  --display-text-color: #ffffff;
+  --button-bg-color: #505050;
+  --button-bg-color-light: #707070; /* Color más claro */
+  --button-text-color: #ffffff;
+  --button-text-color-dark: #333333; /* Color más oscuro */
+  --button-special-bg-color: #a5a5a5;
+  --button-special-text-color: #000000;
+  --button-operation-bg-color: #F1A33B;
+  --button-operation-text-color: #ffffff;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
 }
 
-.App-link {
-  color: #61dafb;
+.App .display {
+  width: 34%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .button-panel {
+  width: 73%;
 }

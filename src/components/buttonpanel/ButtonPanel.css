@@ -1,0 +1,12 @@
+.button-panel {
+    display:flex;
+    flex-direction: column;
+    max-width: 370px;
+}
+
+.row {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
