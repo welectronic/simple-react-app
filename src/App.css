@@ -12,6 +12,7 @@
   --button-special-text-color: #000000;
   --button-operation-bg-color: #F1A33B;
   --button-operation-text-color: #ffffff;
+  --general-background-color:#282c34;
 }
 
 .App {
@@ -20,7 +21,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #282c34;
+  background-color: var(--general-background-color);
 }
 
 .App .display {

@@ -14,7 +14,7 @@ function Button(props) {
                 if (buttonRef.current) {
                     buttonRef.current.classList.remove('pressed');
                 }
-            }, 200); // Remover la clase después de 1 segundo
+            }, 200); // Remover la clase después de 200ms
         }
     };
 
