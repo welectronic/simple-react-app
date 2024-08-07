@@ -1,4 +1,4 @@
-# Simple React Calculator
+# Simple React Calculator :)
 
 ## Descripción del Proyecto
 
